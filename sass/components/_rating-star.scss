@@ -1,0 +1,25 @@
+.rating-star {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 65px;
+  height: 14px;
+  white-space: nowrap;
+  color: $yellow;
+  font-size: 14px;
+  line-height: 1;
+
+  .status {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &.star-lg {
+    width: 195px;
+    height: 42px;
+    font-size: 42px;
+  }
+}

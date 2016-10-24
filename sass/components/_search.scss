@@ -1,0 +1,18 @@
+.search {
+  .form-group{
+    position: relative;
+  }
+
+  .fa {
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    color: $blue;
+    font-size: 17px;
+  }
+
+  .form-control {
+    padding-left: 30px;
+    border-color: $blue;
+  }
+}

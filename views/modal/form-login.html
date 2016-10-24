@@ -1,0 +1,109 @@
+<div class="modal fade form-login" id="formLogin">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h4 class="modal-title">
+                    Авторизация
+                </h4>
+            </div>
+            <div class="modal-body">
+                <ul class="form-login-nav clearfix">
+                    <li class="active"><a href="#login" data-toggle="tab">Вход</a></li>
+                    <li><a href="#registration" data-toggle="tab">Регистрация</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="login">
+                        <form action="#">
+
+                            <div class="form-group">
+                                <label for="email-login">Электронная почта</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                    <input type="text" class="form-control" name="email-login" id="email-login" placeholder="Электронная почта" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password-login">Пароль</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg"></i></span>
+                                    <input type="password" class="form-control" name="password-login" id="password-login" placeholder="Пароль" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary btn-block">Войти</button>
+                            </div>
+
+                            <div class="form-group clearfix">
+                                <div class="pull-left checkbox">
+                                    <label>
+                                        <input type="checkbox" value="remember-me" />Запомнить меня
+                                    </label>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#">Напомнить пароль?</a>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="registration">
+                        <form action="#">
+
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Ваше имя" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Электронная почта</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="Электронная почта" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="username">Ваш login</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                                    <input type="text" class="form-control" name="username" id="username" placeholder="Ваш login" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Пароль</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg"></i></span>
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Пароль" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirm">Повторите пароль</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg"></i></span>
+                                    <input type="password" class="form-control" name="confirm" id="confirm" placeholder="Повторите пароль" />
+                                </div>
+                            </div>
+
+                            <div class="form-group ">
+                                <button type="button" class="btn btn-primary btn-block">Регистрация</button>
+                            </div>
+
+                            <div class="form-group text-right">
+                                <a href="#">Войти</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

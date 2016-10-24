@@ -1,0 +1,27 @@
+// Responsive breakpoint manager
+$breakpoints: (
+  'medium':       (max-width: $screen-md),
+  'small':        (max-width: $screen-sm),
+  'small-x':      (max-width: $screen-sm-x),
+  'small-x-min':  (min-width: $screen-sm-x),
+  'small-xx':     (max-width: $screen-sm-xx),
+);
+
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == 'string',
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media all and #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+      + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}

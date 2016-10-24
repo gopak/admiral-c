@@ -1,0 +1,39 @@
+// Screen option
+//* Medium
+$screen-md:       768px !default;
+$md-html-size:    9px !default;
+
+//* Small
+$screen-sm:       640px !default;
+
+//* Small X
+$screen-sm-x:     480px !default;
+$sm-x-html-size:  8px !default;
+
+//* Small XX
+$screen-sm-xx:    320px !default;
+
+
+// Color
+$gray:    #dedede !default;
+$blue:    #337ab7 !default;
+$green:   #93c502 !default;
+$red:     #d6422c !default;
+$yellow:  #ff9534 !default;
+
+
+// Typography
+$font-color-base:                     #333333 !default;
+
+$font-size-root:                      10px !default;
+$font-size-base:                      12px !default;
+$line-height-base:                    1.6 !default;
+$link-color-base:                     #2c77fe !default;
+$color-base:                          $red !default;
+$color-bg-base:                       #fff !default;
+$font-family-base:                    Arial, sans-serif !default;
+$font-family-awesome:                 FontAwesome;
+$font-info:                           Open Sans, sans-serif !default;
+$font-family-roboto-regular:          RobotoRegular, Arial !default;
+$font-family-roboto-light:            RobotoLight, Arial !default;
+$font-family-roboto-bold:             RobotoBold, Arial !default;

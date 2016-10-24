@@ -1,0 +1,75 @@
+.office-detect {
+  $box-height: 450px;
+
+  &-list {
+    overflow-y: auto;
+    max-height: $box-height;
+    padding-right: 5px;
+
+    .item {
+      margin-bottom: 10px;
+      border-bottom: 1px dotted $gray;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .item-in {
+      position: relative;
+      margin-bottom: 5px;
+      padding-left: 25px;
+
+      > .fa {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 17px;
+      }
+
+      &.title {
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+          color: #0076b2;
+        }
+      }
+
+      &-col {
+        padding-left: 0;
+      }
+    }
+
+    &.sto-list {
+      padding: 10px;
+
+      .item {
+        padding: 5px;
+        border-radius: 3px;
+        border-color: transparent;
+
+        .photo {
+          float: right;
+          max-width: 50px;
+        }
+
+        &.active {
+          box-shadow: 3px 3px 6px rgba($blue, 0.75);
+
+          .title {
+            color: #0076b2;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  &-map {
+    width: 100%;
+    height: $box-height;
+  }
+}

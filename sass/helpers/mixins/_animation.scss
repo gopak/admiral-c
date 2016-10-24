@@ -1,0 +1,14 @@
+@mixin animate-property($property, $value...) {
+  -webkit-#{$property}: unquote('#{$value}');
+  #{$property}: unquote('#{$value}');
+}
+
+@mixin animate-keyframe($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}

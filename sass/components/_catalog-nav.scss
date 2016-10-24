@@ -1,0 +1,59 @@
+.catalog-nav {
+  $border-width: 3px;
+
+  width: 100%;
+  margin-bottom: 20px;
+  border-width: $border-width 0;
+  border-style: solid;
+  border-color: #f5f5f5;
+
+  @include respond-to('medium') {
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  li {
+    display: inline-block;
+
+    a {
+      display: block;
+      padding: 10px;
+      margin-top: -$border-width;
+      border-top: $border-width solid transparent;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 600;
+      transition: .5s all ease-out;
+      color: $font-color-base;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &.active,
+    &:hover {
+      a {
+        border-color: $red;
+        color: $red;
+      }
+    }
+
+    &.active {
+      a {
+        cursor: default;
+      }
+    }
+  }
+}
+
+.mobile-icon {
+  &:after {
+    content: '\f105';
+    position: absolute;
+    right: 3px;
+    top: 10px;
+    color: $red;
+    @include font-awesome(20px);
+  }
+}

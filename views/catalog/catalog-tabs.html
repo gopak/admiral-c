@@ -1,0 +1,32 @@
+<div class="row m_b-20">
+    <div class="col-md-12 mobile-icon">
+        <ul class="catalog-nav">
+            <li class="active">
+                <a href="#selectionAuto" data-toggle="tab">Подбор по авто</a>
+            </li>
+            <li>
+                <a href="#selectionVin" data-toggle="tab">Подбор по вин</a>
+            </li>
+            <li>
+                <a href="#selectionVin" data-toggle="tab">Автомасла и автохимия</a>
+            </li>
+            <li>
+                <a href="#selectionVin" data-toggle="tab">Универсальные запчасти</a>
+            </li>
+            <li>
+                <a href="#selectionSto" data-toggle="tab">Подбор СТО</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="selectionAuto">
+                <div w3-include-html="views/catalog/selection-auto.html"></div>
+            </div>
+            <div class="tab-pane" id="selectionVin">
+                <div w3-include-html="views/catalog/selection-vin.html"></div>
+            </div>
+            <div class="tab-pane" id="selectionSto">
+                <div w3-include-html="views/catalog/selection-sto.html"></div>
+            </div>
+        </div>
+    </div>
+</div>

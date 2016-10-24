@@ -1,0 +1,14 @@
+.header-info {
+  margin-bottom: 30px;
+  padding-top: 40px;
+  background: #fff;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,#e1ecf5 0,#fff 100%);
+  background: -webkit-linear-gradient(top,#e1ecf5 0,#fff 100%);
+  background: -ms-linear-gradient(top,#e1ecf5 0,#fff 100%);
+  background: linear-gradient(to bottom,#e1ecf5 0,#fff 100%);
+
+  .logo {
+    cursor: pointer;
+  }
+}

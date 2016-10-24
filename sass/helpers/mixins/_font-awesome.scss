@@ -1,0 +1,8 @@
+@mixin font-awesome($font-size, $font-weight : normal, $font-style :normal) {
+  font-family: $font-family-awesome;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+}

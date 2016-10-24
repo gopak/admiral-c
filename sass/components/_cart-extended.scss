@@ -1,0 +1,26 @@
+.cart-extended {
+  .td-small {
+    width: 100px;
+    text-align: center;
+  }
+  
+  .remove {
+    opacity: 0.75;
+    font-size: 13px;
+    color: $red;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  table {
+    font-size: 16px;
+
+    @include respond-to('medium') {
+      font-size: 13px;
+    }
+  }
+}

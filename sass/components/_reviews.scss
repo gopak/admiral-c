@@ -1,0 +1,68 @@
+.reviews {
+  .item {
+    margin-top: 25px;
+  }
+
+  &-rating {
+    min-width: 70px;
+    text-align: center;
+    font-size: 0;
+
+    .count {
+      font-size: 22px;
+      color: $blue;
+      line-height: 1;
+    }
+
+    .plus,
+    .minus {
+      cursor: pointer;
+      display: inline-block;
+      width: 50%;
+      margin-bottom: 5px;
+      font-size: 18px;
+      @include opacity(0.5);
+      transition: opacity 0.3s;
+
+      &:hover {
+        @include opacity(1);
+      }
+    }
+
+    .plus   { color: $green; }
+    .minus  { color: $red; }
+  }
+
+  .pros-cons {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    font-size: 12px;
+
+    .fa {
+      position: absolute;
+      top: 2px;
+      left: 0;
+    }
+
+    &.pros   { color: $green; }
+    &.cons   { color: $red; }
+  }
+
+  .sort {
+
+    &-in {
+      display: inline-block;
+      vertical-align: middle;
+      width: 180px;
+    }
+
+    .fa {
+      cursor: pointer;
+      
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}

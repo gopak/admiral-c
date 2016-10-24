@@ -1,0 +1,112 @@
+.cart-block {
+  .media {
+    overflow: visible;
+  }
+  .media-left {
+    position: relative;
+  }
+
+  .media-body {
+    vertical-align: middle;
+  }
+
+  .link {
+    vertical-align: middle;
+    border-bottom: 1px dotted;
+  }
+
+  .amount {
+    display: none;
+    font-weight: 600;
+  }
+
+  .count {
+    display: none;
+    position: absolute;
+    top: -12px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: $green;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+
+  &.active {
+    .media {
+      color: $blue;
+      cursor: pointer;
+    }
+
+    .amount {
+      display: block;
+    }
+
+    .count {
+      display: block;
+    }
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 180px;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+
+    &-in {
+      padding: 0 10px;
+    }
+
+    hr {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .cart-link {
+      color: $blue;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  &:hover {
+    .dropdown {
+      display: block;
+      @include animate-property(animation-name, fadeAnimation);
+      @include animate-property(animation-duration, .4s);
+      @include animate-property(animation-timing-function, ease);
+      @include animate-property(animation-iteration-count, 1);
+      @include animate-property(animation-fill-mode, forwards);
+    }
+  }
+}
+
+@include animate-keyframe(fadeAnimation) {
+  from {
+    opacity: 0;
+    top: 120%;
+  }
+  to {
+    opacity: 1;
+    top: 100%;
+  }
+}

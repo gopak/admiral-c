@@ -1,0 +1,33 @@
+.pub-carousel {
+  //max-height: 330px;
+
+  img {
+    margin-bottom: 5px;
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .category {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .title {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  .desc {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  .rating-star {
+    vertical-align: top;
+  }
+}

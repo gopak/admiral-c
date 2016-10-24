@@ -1,0 +1,15 @@
+.box-b-carousel {
+  max-width: 260px;
+  margin: 0 auto 20px;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

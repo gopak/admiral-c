@@ -1,0 +1,16 @@
+$color-gray:			#d6d6d6 !default;
+
+//nav
+$nav-color: 			$red !default;
+$nav-font-size: 		0 !default;
+$nav-disabled-opacity: 	0.2 !default;
+
+//dots
+$dot-width:				14px !default;
+$dot-height:			14px !default;
+$dot-rounded:			30px !default;
+$dot-margin: 			5px !default;
+$dot-background:		$color-gray !default;
+$dot-background-active:	$red !default;
+
+@import 'theme';

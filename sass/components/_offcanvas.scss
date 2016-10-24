@@ -1,0 +1,36 @@
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    transition: all .25s ease-out;
+
+    &-right {
+      right: 0;
+
+      &.active {
+        right: 50%;
+      }
+
+      .sidebar-offcanvas {
+        right: -50%;
+      }
+    }
+
+    &-left {
+      left: 0;
+
+      &.active {
+        left: 50%;
+      }
+
+      .sidebar-offcanvas {
+        left: -50%;
+      }
+    }
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%;
+  }
+}

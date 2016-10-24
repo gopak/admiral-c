@@ -1,0 +1,42 @@
+.form-login {
+  .modal-dialog {
+    max-width: 400px;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  .tab-pane {
+    padding: 0 15px;
+  }
+
+  &-nav {
+    li {
+      float: left;
+      width: 50%;
+      list-style: none;
+
+      &.active,
+      &:hover {
+        background-color: #337ab7;
+
+        a {
+          color: #fff;
+        }
+      }
+      
+      a {
+        display: block;
+        padding: 7px 10px;
+        color: $font-color-base;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .checkbox {
+    margin-top: 0;
+  }
+}
