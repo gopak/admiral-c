@@ -59,6 +59,55 @@ $(document).ready(function () {
         $('[data-toggle="popover"]').popover({
             html : true
         });
+
+        /**
+         * Show/Hide block
+         *
+         * Base HTML:
+         * <div>
+         *     Main content
+         *     <div class="d_n" data-show-hide-text>
+         *         Hide content
+         *     </div>
+         *     <div
+         *          data-show-hide-button
+         *          data-show-text="Button show text"
+         *          data-hide-text="Button hide hide"
+         *     >
+         *          Button show text
+         *     </div>
+         * </div>
+         *
+         * Default value:
+         *      data-show-text - 'See More'
+         *      data-hide-text - 'See Less'
+         *
+         */
+
+        $('[data-show-hide-button]').on('click', function(e) {
+            var $toggler = $(this);
+
+            toggleBlock(getContinueTextElement($toggler));
+            $toggler.text(getTogglerText($toggler));
+            $toggler.toggleClass('hide');
+        });
+
+        function toggleBlock($block) {
+            $block.slideToggle(300);
+        }
+
+        function getContinueTextElement($toggler) {
+            return $toggler.parent().find('[data-show-hide-text]');
+        }
+
+        function getTogglerText($toggler) {
+            var showText = $toggler.data('showText') || 'Смотреть больше',
+                hideText = $toggler.data('hideText') || 'Скрыть';
+
+            return $toggler.text() == showText
+                ? hideText
+                : showText;
+        }
        
     }, 1000);
 });

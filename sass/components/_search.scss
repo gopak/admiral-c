@@ -1,4 +1,8 @@
 .search {
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: top;
+
   .form-group{
     position: relative;
   }
@@ -14,5 +18,16 @@
   .form-control {
     padding-left: 30px;
     border-color: $blue;
+  }
+}
+
+@include respond-to('medium') {
+  .search {
+    display: block;
+    margin: 0;
+
+    .form-group{
+      display: inline-block;
+    }
   }
 }

@@ -110,3 +110,21 @@
     top: 100%;
   }
 }
+
+@include respond-to('medium') {
+  .cart-block {
+    float: right;
+    margin-top: 15px;
+
+    .count {
+      width: 20px;
+      height: 20px;
+      font-size: 11px;
+      line-height: 21px;
+    }
+
+    .fa {
+      font-size: 26px;
+    }
+  }
+}

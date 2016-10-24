@@ -1,3 +1,22 @@
 .navbar {
   margin-bottom: 0;
 }
+
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+}
+
+.navbar-brand {
+  float: right;
+
+  @include respond-to('medium') {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .fa {
+      margin-top: 8px;
+      font-size: 34px;
+    }
+  }
+}

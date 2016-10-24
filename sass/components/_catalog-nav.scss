@@ -47,13 +47,15 @@
   }
 }
 
-.mobile-icon {
-  &:after {
-    content: '\f105';
-    position: absolute;
-    right: 3px;
-    top: 10px;
-    color: $red;
-    @include font-awesome(20px);
+@include respond-to('medium') {
+  .mobile-icon {
+    &:after {
+      content: '\f105';
+      position: absolute;
+      right: 3px;
+      top: 10px;
+      color: $red;
+      @include font-awesome(20px);
+    }
   }
 }

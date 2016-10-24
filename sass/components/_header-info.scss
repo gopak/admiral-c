@@ -1,6 +1,6 @@
 .header-info {
   margin-bottom: 30px;
-  padding-top: 40px;
+  padding-top: 30px;
   background: #fff;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
   background: -moz-linear-gradient(top,#e1ecf5 0,#fff 100%);
@@ -10,5 +10,32 @@
 
   .logo {
     cursor: pointer;
+  }
+
+  .phone {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 500;
+
+    small {
+      font-size: 65%;
+      font-weight: normal;
+      line-height: 1;
+      color: #777777;
+    }
+  }
+}
+
+@include respond-to('medium') {
+  .header-info {
+    margin-bottom: 15px;
+    padding-top: 15px;
+
+    .phone {
+      display: block;
+      margin: 0;
+    }
   }
 }
