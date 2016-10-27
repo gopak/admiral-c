@@ -1,17 +1,13 @@
 .product-grid {
-
   .item {
+    margin-bottom: 15px;
     padding: 5px 5px 10px;
     border: 1px solid rgba($blue, 0.75);
     border-radius: 3px;
-    margin-bottom: 10px;
     transition: all 0.3s;
 
-    &:hover {
-      box-shadow:  1px 1px 5px 0px rgba($blue, 0.5);
-    }
-
     .photo {
+      display: block;
       width: auto;
       height: 200px;
       margin: 0 auto 5px;
@@ -23,6 +19,4 @@
       margin-bottom: 5px;
     }
   }
-
-
 }
