@@ -1,6 +1,6 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-top">
     <div class="container">
-        <div class="navbar-header">
+        <div class="pull-left">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -10,10 +10,8 @@
             <span class="logo visible-xs-block" onclick="window.location.href='http://admiral-c.com.ua/'">
                 <img src="images/logo.png" alt="Адмирал С Доверьте свое авто профессионалам" title="Адмирал С Доверьте свое авто профессионалам" />
             </span>
-            <span class="navbar-brand">
-                <a href="#" class="link" data-toggle="modal" data-target="#officeDetect">
-                    <i class="fa fa-map-marker"></i> <span class="hidden-xs">Офис</span>
-                </a>
+            <span class="btn btn-default btn-sm m_t-5 m_r-10" data-toggle="modal" data-target="#officeDetect">
+                <i class="fa fa-map-marker"></i> <span class="hidden-xs">Офис</span>
             </span>
             <div class="cart-block active visible-xs-block">
                 <div class="media"
@@ -27,9 +25,27 @@
                 </div>
             </div>
         </div>
+        <div class="pull-right">
+            <span class="btn btn-default btn-sm m_t-5" data-toggle="modal" data-target="#formLogin">
+                <i class="fa fa-user m_r-10"></i>Авторизация
+            </span>
+        </div>
+        <div class="pull-right">
+            <div class="phone-header"
+                 role="button"
+                 data-container="body"
+                 data-toggle="popover"
+                 data-placement="bottom"
+                 data-content="<h3><a href='tel:380507150122'><small>+38 050</small> 715-01-22(viber)</a></h3><h3><a href='tel:380977957393'><small>+38 097</small> 795-73-93</a></h3><h3><a href='tel:380936715993'><small>+38 093</small> 671-59-93</a></h3>"
+            >
+                <i class="glyphicon glyphicon-phone-alt m_r-10"></i>
+                <small>+38 044</small> 228-42-93
+                <span class="caret"></span>
+            </div>
+        </div>
         <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav">
-                <li class="dropdown">
+                <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Неоригинал</a></li>
@@ -38,15 +54,11 @@
                         <li><a href="#">Универсальные запчасти</a></li>
                         <li><a href="#">Подбор СТО</a></li>
                     </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Помощь <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                </li>-->
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Контакты</a></li>
                         <li><a href="#">Оплата и доставка</a></li>
-                    </ul>
-                </li>
+
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Сотрудничество <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -57,13 +69,8 @@
                     </ul>
                 </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#formLogin">
-                        <i class="fa fa-user m_r-10"></i>Авторизация
-                    </a>
-                </li>
-            </ul>
+
         </div>
+
     </div>
 </nav>

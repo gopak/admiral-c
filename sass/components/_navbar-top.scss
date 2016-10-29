@@ -1,0 +1,10 @@
+.navbar-top {
+  margin-bottom: 0;
+  background: -moz-linear-gradient(top,#fff 0,#ededed 100%);
+  background: -webkit-linear-gradient(top,#fff 0,#ededed 100%);
+  background: -ms-linear-gradient(top,#fff 0,#ededed 100%);
+  background: linear-gradient(to bottom,#fff 0,#ededed 100%);
+  box-shadow: 0 0 5px 1px rgba(50, 50, 50, .3);
+  border-bottom-color: $blue;
+  border-bottom-width: 2px;
+}

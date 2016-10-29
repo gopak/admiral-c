@@ -1,0 +1,44 @@
+.navbar-catalog {
+  overflow: hidden;
+  min-height: 30px;
+  margin-bottom: 20px;
+  background-color: $blue;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+
+  .navbar-nav {
+    float: none;
+    display: table;
+    width: 100%;
+
+    > li {
+      float: none;
+      display: table-cell;
+      vertical-align: middle;
+      width: 16.66667%;
+      border-right: 1px solid #ccc;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      &.long {
+        width: 25%;
+      }
+
+      a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: #fff;
+        transition: all 0.3s;
+
+        &:hover,
+        &:focus {
+          background-color: $red;
+        }
+      }
+    }
+  }
+}

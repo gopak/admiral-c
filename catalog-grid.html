@@ -11,55 +11,61 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
     <script src="js/custom.js"></script>
 
 </head>
 <body>
 
-    <div w3-include-html="views/layouts/header.html"></div>
+<div w3-include-html="views/layouts/header.html"></div>
 
-    <div class="container">
+<div class="container">
 
-        <div class="row">
+    <h1>Масла полусинтетические</h1>
 
-            <div class="col-md-9 m_b-20">
+    <div class="row">
 
-                <h1>Масла полусинтетические</h1>
+        <div class="col-md-9 m_b-20">
 
-                <div w3-include-html="views/catalog/product-layout.html"></div>
-
-            </div>
-
-            <div class="col-md-3 m_b-20">
-
-                filters
-
-            </div>
+            <div w3-include-html="views/catalog/product-layout.html"></div>
 
         </div>
 
-        <div w3-include-html="views/widgets/widget-product.html"></div>
+        <div class="col-md-3 m_b-20">
 
-        <div w3-include-html="views/widgets/widget-reviews.html"></div>
+            <div w3-include-html="views/catalog/product-filters.html"></div>
 
-        <div w3-include-html="views/widgets/seo-bottom-catalog.html"></div>
-
-        <div w3-include-html="views/layouts/footer.html"></div>
+        </div>
 
     </div>
 
-    <!-- TODO Modal include -->
+    <div w3-include-html="views/widgets/widget-product.html"></div>
 
-    <div w3-include-html="views/modal/modal.html"></div>
+    <div w3-include-html="views/widgets/widget-publications.html"></div>
 
-    <script>
-        w3IncludeHTML();
-    </script>
+    <div w3-include-html="views/widgets/widget-reviews.html"></div>
+
+    <div w3-include-html="views/widgets/seo-bottom.html"></div>
+
+</div>
+
+<div w3-include-html="views/layouts/footer.html"></div>
+
+<!-- TODO Modal include -->
+
+<div w3-include-html="views/modal/modal.html"></div>
+
+<script>
+    w3IncludeHTML();
+</script>
 
 </body>
 </html>
