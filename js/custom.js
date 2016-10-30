@@ -139,9 +139,9 @@ $(document).ready(function () {
             source: availableTags
         });
 
-        $(".scroll-box").mCustomScrollbar({
+        /*$(".scroll-box").mCustomScrollbar({
             axis:"y"
-        });
+        });*/
        
-    }, 1000);
+    }, 2000);
 });

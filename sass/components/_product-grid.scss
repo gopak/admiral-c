@@ -18,11 +18,23 @@
       display: block;
       margin-bottom: 5px;
     }
+
+    .desc {
+      margin-top: 10px;
+      font-size: 12px;
+    }
   }
 
   &-catalog {
     .item {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
+      border-color: transparent;
+      transition: all 0.3s;
+
+      &:hover {
+        border-color: rgba($blue, 0.75);
+        box-shadow: 0px 0px 15px 0px rgba($blue, 0.75);
+      }
     }
   }
 }

@@ -4,6 +4,7 @@
 @import "normalize/reset";
 
 @import "core/img";
+@import "core/grid";
 @import "core/utilities";
 @import "core/type/color";
 @import "core/type/headings";
@@ -23,6 +24,7 @@
 @import "components/bootstrap/popovers";
 
 @import "components/hint";
+@import "components/breadcrumb";
 @import "components/rating-star";
 @import "components/offcanvas";
 @import "components/viewbox";
@@ -47,3 +49,4 @@
 @import "components/share-list";
 @import "components/catalog-tree";
 @import "components/scroll-box";
+@import "components/product-filters";
