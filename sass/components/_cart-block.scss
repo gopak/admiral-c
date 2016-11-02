@@ -113,19 +113,21 @@
 }
 
 @include respond-to('medium') {
-  .cart-block {
-    float: right;
-    margin-top: 15px;
+  .navbar-top {
+    .cart-block {
+      float: right;
+      margin: 14px 10px 0 0;
 
-    .count {
-      width: 20px;
-      height: 20px;
-      font-size: 11px;
-      line-height: 21px;
-    }
+      .count {
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        line-height: 21px;
+      }
 
-    .fa {
-      font-size: 26px;
+      .fa {
+        font-size: 20px;
+      }
     }
   }
 }

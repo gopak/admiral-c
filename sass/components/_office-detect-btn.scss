@@ -1,0 +1,13 @@
+.office-detect-btn {
+  float: left;
+  margin: 5px 10px 0 0;
+}
+
+@include respond-to('medium') {
+  .navbar-top {
+    .office-detect-btn {
+      margin-right: 5px;
+      float: right;
+    }
+  }
+}

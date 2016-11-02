@@ -66,10 +66,23 @@
     }
   }
 
-
-
   &-map {
     width: 100%;
     height: $box-height;
+  }
+}
+
+@include respond-to('medium') {
+  .office-detect {
+    $box-height-md: 230px;
+
+    &-list {
+      max-height: $box-height-md;
+      margin-bottom: 10px;
+    }
+
+    &-map {
+      height: $box-height-md;
+    }
   }
 }
