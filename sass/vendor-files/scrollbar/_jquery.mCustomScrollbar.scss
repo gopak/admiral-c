@@ -1,0 +1,87 @@
+.mCustomScrollbar {
+  @include prefix(touch-action, none, ms);
+
+  &.mCS_no_scrollbar {
+    @include prefix(touch-action, auto, ms);
+  }
+}
+
+.mCustomScrollBox {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: 100%;
+  outline: none;
+  direction: ltr;
+}
+
+.mCSB_container {
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+
+.mCSB_inside > .mCSB_container {
+  margin-right: 16px;
+}
+
+.mCSB_scrollTools {
+  position: absolute;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 16px;
+  height: auto;
+  opacity: 0.5;
+
+  .mCSB_draggerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+  }
+
+  .mCSB_dragger {
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    height: 30px;
+
+    .mCSB_dragger_bar {
+      position: relative;
+      width: 5px;
+      height: 100%;
+      margin: 0 auto;
+      background-color: #696969;
+      border-radius: 16px;
+      text-align: center;
+    }
+  }
+
+  .mCSB_draggerRail {
+    width: 5px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #e8e6e6;
+    border-radius: 16px;
+  }
+}
+
+.mCustomScrollBox:hover > .mCSB_scrollTools,
+.mCustomScrollBox:hover ~ .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox ~ .mCSB_scrollTools {
+  opacity: 1;
+}
+
+.mCSB_scrollTools,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+  transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+}

@@ -50,7 +50,7 @@ $(document).ready(function () {
             lazyLoad: true,
             animateOut: 'fadeOut',
             loop: true,
-            autoplay: true,
+            // autoplay: true,
             autoplayTimeout: 5000,
             autoplayHoverPause:true,
             autoHeight: true
@@ -108,6 +108,40 @@ $(document).ready(function () {
                 ? hideText
                 : showText;
         }
+        
+        //
+
+        var availableTags = [
+            "ActionScript",
+            "AppleScript",
+            "Asp",
+            "BASIC",
+            "C",
+            "C++",
+            "Clojure",
+            "COBOL",
+            "ColdFusion",
+            "Erlang",
+            "Fortran",
+            "Groovy",
+            "Haskell",
+            "Java",
+            "JavaScript",
+            "Lisp",
+            "Perl",
+            "PHP",
+            "Python",
+            "Ruby",
+            "Scala",
+            "Scheme"
+        ];
+        $('[data-autocomplete]').autocomplete({
+            source: availableTags
+        });
+
+        /*$(".scroll-box").mCustomScrollbar({
+            axis:"y"
+        });*/
        
-    }, 1000);
+    }, 2000);
 });

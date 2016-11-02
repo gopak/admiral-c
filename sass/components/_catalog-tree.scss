@@ -1,0 +1,50 @@
+.catalog-tree {
+
+  li {
+    list-style: none;
+
+    a,
+    span {
+      position: relative;
+      display: block;
+      padding: 5px;
+      cursor: pointer;
+    }
+
+    span {
+      &:before {
+        float: left;
+        margin-right: 5px;
+        line-height: 1;
+        content: '\f055';
+        @include font-awesome(16px);
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    a {
+      padding-left: 24px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    &.active {
+      > span {
+        cursor: default;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:before {
+          content: '\f056';
+        }
+      }
+    }
+  }
+}

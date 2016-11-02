@@ -1,33 +1,20 @@
 .search {
-  display: inline-block;
-  margin-right: 15px;
-  vertical-align: top;
-
-  .form-group{
-    position: relative;
-  }
-
-  .fa {
-    position: absolute;
-    top: 7px;
-    left: 8px;
-    color: $blue;
-    font-size: 17px;
-  }
-
   .form-control {
-    padding-left: 30px;
     border-color: $blue;
+  }
+  
+  .input-group-addon {
+    background-color: $blue;
+    border-color: $blue;
+    color: #fff;
+    cursor: pointer;
+
+    .fa {
+      font-size: 20px;
+    }
   }
 }
 
 @include respond-to('medium') {
-  .search {
-    display: block;
-    margin: 0;
 
-    .form-group{
-      display: inline-block;
-    }
-  }
 }

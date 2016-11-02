@@ -8,6 +8,7 @@
 
   .media-body {
     vertical-align: middle;
+    font-size: 12px;
   }
 
   .link {
@@ -25,14 +26,14 @@
     position: absolute;
     top: -12px;
     right: 5px;
-    width: 25px;
-    height: 25px;
+    min-width: 20px;
+    height: 20px;
     border-radius: 100%;
     background-color: $green;
     color: #fff;
     text-align: center;
-    line-height: 25px;
-    font-size: 13px;
+    line-height: 21px;
+    font-size: 12px;
     font-weight: 600;
   }
 

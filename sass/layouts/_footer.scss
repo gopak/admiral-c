@@ -1,7 +1,9 @@
 footer {
   margin-top: 10px;
   padding-top: 10px;
-  border-top: 1px solid $gray;
+  background-color: $gray;
+  border-top: 1px solid #c3c3c3;
+  box-shadow: inset 0 1px 6px 0 #d8d8d8;
 
   @include respond-to('medium') {
     [class^="col-"] {

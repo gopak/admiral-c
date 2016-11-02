@@ -1,0 +1,27 @@
+.product-filters {
+  .title {
+    margin-top: 0;
+    font-weight: 600;
+  }
+
+  &-list {
+    a {
+      display: block;
+      position: relative;
+      margin-bottom: 5px;
+      padding-left: 20px;
+
+      input {
+        position: absolute;
+        top: 0;
+        left:0;
+      }
+    }
+  }
+
+  &-price {
+    .form-control {
+      width: 70px;
+    }
+  }
+}

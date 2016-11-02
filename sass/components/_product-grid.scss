@@ -1,7 +1,7 @@
 .product-grid {
   .item {
-    margin-bottom: 15px;
     padding: 5px 5px 10px;
+    background-color: #fff;
     border: 1px solid rgba($blue, 0.75);
     border-radius: 3px;
     transition: all 0.3s;
@@ -17,6 +17,24 @@
     .title {
       display: block;
       margin-bottom: 5px;
+    }
+
+    .desc {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+  }
+
+  &-catalog {
+    .item {
+      margin-bottom: 10px;
+      border-color: transparent;
+      transition: all 0.3s;
+
+      &:hover {
+        border-color: rgba($blue, 0.75);
+        box-shadow: 0px 0px 15px 0px rgba($blue, 0.75);
+      }
     }
   }
 }
