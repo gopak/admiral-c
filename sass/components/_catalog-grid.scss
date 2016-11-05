@@ -1,0 +1,67 @@
+.catalog-grid {
+  .item {
+    position: relative;
+    @include flex-centre();
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid $border-gray;
+    border-radius: 3px;
+    text-align: center;
+    transition: all 0.3s;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 3px;
+      transition: all 0.3s;
+      pointer-events: none;
+    }
+
+    &:hover {
+      z-index: 1;
+      border-color: transparent;
+
+      &:before {
+        bottom: -6px;
+        left: -2px;
+        right: -2px;
+        top: -6px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    img {
+      display: block;
+      max-height: 100px;
+      margin: 0 auto 5px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+    
+    .desc {
+      display: block;
+      margin-top: 5px;
+      padding-top: 5px;
+      border-top: 1px solid $border-gray;
+      font-size: 12px;
+      color: $font-color-base;
+    }
+  }
+
+  &-sm {
+    .item {
+      height: 100px;
+
+      img {
+        max-height: 70px;
+      }
+    }
+  }
+}

@@ -13,6 +13,11 @@ $sm-x-html-size:  8px !default;
 //* Small XX
 $screen-sm-xx:    320px !default;
 
+//Header
+$header-height: 43px !default;
+
+//Mobile menu
+$mobile-menu-width: 256px !default;
 
 // Color
 $gray:    #f5f5f5 !default;
@@ -21,6 +26,8 @@ $green:   #93c502 !default;
 $red:     #d6422c !default;
 $yellow:  #ff9534 !default;
 
+//Border
+$border-gray: #ccc !default;
 
 // Typography
 $font-color-base:                     #333333 !default;

@@ -20,12 +20,14 @@
     <script src="js/owl.carousel.min.js"></script>
     <!--<script src="js/jquery.mCustomScrollbar.min.js"></script>--> <!-- TODO конфликтует с w3data.js  -->
     <script src="js/custom.js"></script>
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="js/w3data.js"></script>
 
 </head>
 <body>
 
 <div w3-include-html="views/layouts/header.html"></div>
+
+<div w3-include-html="views/layouts/mobile-nav.html"></div>
 
 <div class="container">
 
@@ -43,7 +45,7 @@
 
         <div class="col-md-3 m_b-20">
 
-            <div w3-include-html="views/catalog/product-filters.html"></div>
+            <div w3-include-html="views/catalog/product/product-filters.html"></div>
 
         </div>
 

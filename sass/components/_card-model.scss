@@ -1,0 +1,22 @@
+.card-model {
+  position: relative;
+
+  .title {
+    margin-top: 0;
+    padding-right: 50px;
+  }
+
+  .brand {
+    &-logo {
+      position: absolute;
+      top: 6px;
+      right: 15px;
+      max-width: 50px;
+    }
+
+    &-photo {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

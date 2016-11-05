@@ -1,0 +1,67 @@
+.mobile-nav {
+  position: fixed;
+  z-index: 9;
+  left: -$mobile-menu-width;
+  top: $header-height;
+  bottom: 0;
+  right: 0;
+  width: $mobile-menu-width;
+  overflow-y: auto;
+  background-color: #ededed;
+  -webkit-overflow-scrolling: touch;
+  transition: transform 0.3s;
+
+  &-list {
+    li {
+      width: 100%;
+
+      label,
+      > a {
+        display: block;
+        width: 100%;
+        padding: 12px 10px;
+        border-bottom: 1px solid #ccc;
+        font-size: 16px;
+        color: $blue;
+        text-decoration: none;
+        font-weight: 400;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #f1f1f1;
+          color: $red;
+        }
+      }
+
+      ul {
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+        overflow: hidden;
+
+        li {
+          > a,
+          > span {
+            display: block;
+            width: 100%;
+            padding: 8px 25px;
+            border-bottom: 1px solid #ccc;
+            color: $font-color-base;
+            font-size: 14px;
+            text-decoration: none;
+          }
+        }
+      }
+
+      input {
+        display: none;
+
+        &:checked {
+          ~ ul {
+            max-height: 500px;
+            transition: max-height 0.5s ease-in;
+          }
+        }
+      }
+    }
+  }
+}

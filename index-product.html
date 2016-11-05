@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <title>Title</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!--<script src="js/jquery.mCustomScrollbar.min.js"></script>--> <!-- TODO конфликтует с w3data.js  -->
+    <script src="js/custom.js"></script>
+    <script src="js/w3data.js"></script>
+
+</head>
+<body>
+
+<div w3-include-html="views/layouts/header.html"></div>
+
+<div w3-include-html="views/layouts/mobile-nav.html"></div>
+
+<div class="container">
+
+    <div w3-include-html="views/layouts/breadcrumb.html"></div>
+
+    <h1>Моторное масло Kroon Oil 02222</h1>
+
+    <div class="row">
+
+        <div class="col-md-9 m_b-20">
+
+            <div w3-include-html="views/catalog/product/product-item.html"></div>
+
+        </div>
+
+        <div class="col-md-3 m_b-20">
+
+            <div w3-include-html="views/widgets/widget-banner-sm.html"></div>
+
+            <div w3-include-html="views/layouts/banner-social.html"></div>
+
+        </div>
+
+    </div>
+
+    <div w3-include-html="views/widgets/seo-bottom-catalog.html"></div>
+
+</div>
+
+<div w3-include-html="views/layouts/footer.html"></div>
+
+<!-- TODO Modal include -->
+
+<div w3-include-html="views/modal/modal.html"></div>
+
+<script>
+    w3IncludeHTML();
+</script>
+
+</body>
+</html>

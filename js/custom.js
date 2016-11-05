@@ -1,7 +1,19 @@
 $(document).ready(function () {
     setTimeout(function(){
-        $('[data-toggle="offcanvas"]').click(function () {
-            $('.row-offcanvas').toggleClass('active')
+
+        $('.navbar-toggle').click(function () {
+            $('body').toggleClass('offcanvas-open');
+        });
+        $('.offcanvas-fade').click(function () {
+            $('body').removeClass('offcanvas-open');
+        });        
+        
+        $(".mobile-nav-list label").on("click", function(e) {
+            var $input = $("#" + $(this).attr("for"));
+            if ($input.prop("checked")) {
+                e.preventDefault();
+                $input.prop("checked", false);
+            }
         });
 
         $('[data-carousel-publication]').owlCarousel({
