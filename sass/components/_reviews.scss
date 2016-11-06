@@ -50,11 +50,14 @@
   }
 
   .sort {
-
     &-in {
       display: inline-block;
       vertical-align: middle;
       width: 180px;
+
+      @include respond-to('medium') {
+        width: 140px;
+      }
     }
 
     .fa {
