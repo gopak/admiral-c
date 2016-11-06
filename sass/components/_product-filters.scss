@@ -2,6 +2,11 @@
   .title {
     margin-top: 0;
     font-weight: 600;
+    cursor: pointer;
+
+    .fa {
+      color: $blue;
+    }
   }
 
   &-list {

@@ -72,6 +72,8 @@ $(document).ready(function () {
             html : true
         });
 
+        $('[data-toggle="tooltip"]').tooltip();
+
         /**
          * Show/Hide block
          *

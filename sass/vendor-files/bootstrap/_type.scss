@@ -205,6 +205,7 @@ dd {
 .dl-horizontal {
   dd {
     @include clearfix; // Clear the floated `dt` if an empty `dd` is present
+    margin-bottom: 5px;
   }
 
   @media (min-width: $dl-horizontal-breakpoint) {
@@ -212,7 +213,7 @@ dd {
       float: left;
       width: ($dl-horizontal-offset - 20);
       clear: left;
-      text-align: right;
+      text-align: left;
       @include text-overflow;
     }
     dd {

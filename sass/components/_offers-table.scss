@@ -1,0 +1,108 @@
+.offers-table {
+  border: none;
+  text-align: center;
+
+  th {
+    background-color: $gray;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:first-child {
+      border-radius: 5px 0 0 0;
+      border-left: none;
+    }
+
+    &:last-child {
+      border-radius: 0 5px 0 0;
+      border-right: none;
+    }
+  }
+
+  &.table {
+    th,
+    td {
+      vertical-align: middle;
+    }
+  }
+
+  .price {
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .icon {
+    &-probability,
+    &-time {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    &-probability {
+
+      width: 18px;
+      height: 18px;
+      background-image: url(../images/icon-probability.png);
+
+      &.probability-0   { background-position: 0 0; }
+      &.probability-5   { background-position: 0 -18px; }
+      &.probability-10  { background-position: 0 -36px; }
+      &.probability-15  { background-position: 0 -54px; }
+      &.probability-20  { background-position: 0 -72px; }
+      &.probability-25  { background-position: 0 -90px; }
+      &.probability-30  { background-position: 0 -108px; }
+      &.probability-35  { background-position: 0 -126px; }
+      &.probability-40  { background-position: 0 -144px; }
+      &.probability-45  { background-position: 0 -162px; }
+      &.probability-50  { background-position: 0 -180px; }
+      &.probability-55  { background-position: 0 -198px; }
+      &.probability-60  { background-position: 0 -216px; }
+      &.probability-65  { background-position: 0 -234px; }
+      &.probability-70  { background-position: 0 -252px; }
+      &.probability-75  { background-position: 0 -270px; }
+      &.probability-80  { background-position: 0 -288px; }
+      &.probability-85  { background-position: 0 -306px; }
+      &.probability-90  { background-position: 0 -324px; }
+      &.probability-95  { background-position: 0 -342px; }
+      &.probability-10  { background-position: 0 -360px; }
+    }
+
+    &-time {
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/icon-time.png);
+
+      &.time-00-00 { background-position: 0 0; }
+      &.time-00-05 { background-position: 0 -50px; }
+      &.time-00-05 { background-position: 0 -50px; }
+    }
+  }
+}
+
+.modal-offers-table {
+  .modal-body {
+    padding: 5px 5px 0;
+  }
+
+  .offers-table {
+    .price {
+      font-size: 16px;
+    }
+  }
+}
+
+@include respond-to('medium') {
+  .offers-table {
+    th {
+      font-size: 12px;
+    }
+
+    .price {
+      font-size: 18px;
+    }
+  }
+}

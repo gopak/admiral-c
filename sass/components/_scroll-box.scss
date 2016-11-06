@@ -1,4 +1,9 @@
 .scroll-box {
   height: 150px;
   overflow: hidden;
+
+  &-lg {
+    height: 300px;
+    overflow-y: auto;
+  }
 }

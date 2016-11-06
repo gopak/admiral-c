@@ -4,14 +4,24 @@
   &-list {
     overflow-y: auto;
     max-height: $box-height;
-    padding-right: 5px;
+    padding: 10px;
 
     .item {
       margin-bottom: 10px;
-      border-bottom: 1px dotted $gray;
+      padding: 5px;
+      border-radius: 3px;
 
-      &:last-child {
-        border-bottom: none;
+      .photo {
+        float: right;
+        max-width: 50px;
+      }
+
+      &.active {
+        box-shadow: 3px 3px 6px rgba($blue, 0.6);
+
+        .title {
+          color: #0076b2;
+        }
       }
     }
 
@@ -39,29 +49,6 @@
 
       &-col {
         padding-left: 0;
-      }
-    }
-
-    &.sto-list {
-      padding: 10px;
-
-      .item {
-        padding: 5px;
-        border-radius: 3px;
-        border-color: transparent;
-
-        .photo {
-          float: right;
-          max-width: 50px;
-        }
-
-        &.active {
-          box-shadow: 3px 3px 6px rgba($blue, 0.6);
-
-          .title {
-            color: #0076b2;
-          }
-        }
       }
     }
   }

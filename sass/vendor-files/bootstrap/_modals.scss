@@ -44,7 +44,7 @@
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px;
+  margin: 10px 5px;
 }
 
 // Actual modal
@@ -90,6 +90,7 @@
 .modal-title {
   margin: 0;
   line-height: $modal-title-line-height;
+  font-weight: 600;
 }
 
 // Modal body

@@ -3,6 +3,11 @@
 
 @import "normalize/reset";
 
+@import "font-awesome";
+@import "vendor-files/owl/owl.carousel";
+@import "vendor-files/owl/owl.theme.default";
+@import "vendor-files/scrollbar/jquery.mCustomScrollbar";
+
 @import "core/img";
 @import "core/grid";
 @import "core/utilities";
@@ -11,9 +16,6 @@
 @import "core/type/link";
 @import "core/type/text-size";
 
-@import "layouts/body";
-@import "layouts/header";
-@import "layouts/content";
 @import "layouts/footer";
 
 @import "components/bootstrap/grid";
@@ -23,17 +25,19 @@
 @import "components/bootstrap/navs";
 @import "components/bootstrap/popovers";
 
+@import "components/offcanvas";
 @import "components/hint";
 @import "components/breadcrumb";
-@import "components/rating-star";
-@import "components/offcanvas";
 @import "components/viewbox";
 @import "components/border-box";
+@import "components/rating-star";
+@import "components/table";
+
 @import "components/header-info";
 @import "components/phone-header";
 @import "components/navbar-top";
-@import "components/navbar-catalog";
 @import "components/search";
+@import "components/navbar-catalog";
 @import "components/office-detect-btn";
 @import "components/office-detect";
 @import "components/form-login";
@@ -42,16 +46,17 @@
 @import "components/reviews";
 @import "components/pub-carousel";
 @import "components/tabs-nav";
-@import "components/product-grid";
-@import "components/offers-list";
 @import "components/box-b-carousel";
-@import "components/catalog-nav";
 @import "components/share-list";
-@import "components/catalog-tree";
 @import "components/scroll-box";
-@import "components/product-filters";
-@import "components/catalog-grid";
-@import "components/table";
+
+@import "components/catalog-nav";
 @import "components/mobile-nav";
-@import "components/card-model";
+@import "components/product-grid";
+@import "components/catalog-grid";
+@import "components/product-filters";
 @import "components/product-item";
+@import "components/offers-list";
+@import "components/offers-table";
+@import "components/catalog-tree";
+@import "components/card-model";

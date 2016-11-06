@@ -1,107 +1,163 @@
 <div class="product-item">
+    <ul class="catalog-nav">
+        <li class="active">
+            <a href="#allAboutProduct" data-toggle="tab">Все о товаре</a>
+        </li>
+        <li>
+            <a href="#characteristicsProduct" data-toggle="tab">Характеристики</a>
+        </li>
+        <li>
+            <a href="#originalAnaloguesProduct" data-toggle="tab">Оригинальные аналоги</a>
+        </li>
+        <li>
+            <a href="#aftermarketAnaloguesProduct" data-toggle="tab">Неоригинальные аналоги</a>
+        </li>
+        <li>
+            <a href="#applicabilityProduct" data-toggle="tab">Применяемость к авто</a>
+        </li>
+        <li>
+            <a href="#reviewsProduct" data-toggle="tab">Отзывы <span class="hint">12</span></a>
+        </li>
+    </ul>
+
     <div class="row">
-        <div class="col-md-3 text-center">
-            <a href="#">
-                <img class="m_b-20" src="images/kroon_oil_02222.png" title="Моторное масло Kroon Oil 02222" alt="Моторное масло Kroon Oil 02222" />
-            </a>
-            <div class="hint m_b-5">
-                <a href="#">
-                    <span w3-include-html="views/widgets/rating-star.html"></span>
-                    13 отзывов
-                </a>
-            </div>
-        </div>
-        <div class="col-md-9">
-            <table class="table table-bordered offers-table">
-                <thead>
-                    <tr>
-                        <th>НАЛИЧИЕ</th>
-                        <th>Дата поставки</th>
-                        <th>Цена</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>9<i class="icon-probability probability-0"></i></td>
-                        <td>2 дн.<i class="icon-time"></i></td>
-                        <td>
-                            <span class="price">1066.19 грн</span>
+
+        <div class="col-md-9 m_b-20">
+
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="allAboutProduct">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <a href="#">
+                                <img class="m_b-20" src="images/kroon_oil_02222.png" title="Моторное масло Kroon Oil 02222" alt="Моторное масло Kroon Oil 02222" />
+                            </a>
+                            <div class="hint m_b-5">
+                                <a href="#">
+                                    <span w3-include-html="views/widgets/rating-star.html"></span>
+                                    13 отзывов
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <table class="table table-bordered offers-table">
+                                <thead>
+                                <tr>
+                                    <th>НАЛИЧИЕ</th>
+                                    <th>Дата поставки</th>
+                                    <th>Цена</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        9
+                                        <i class="icon-probability probability-0"
+                                           data-toggle="tooltip"
+                                           data-placement="top"
+                                           title="Вероятность наличия: 85%"
+                                        ></i>
+                                    </td>
+                                    <td>
+                                        2 дн.
+                                        <i class="icon-time time-00-00"
+                                           data-toggle="tooltip"
+                                           data-placement="top"
+                                           title="Товар будет доступен 07.11.2016 в 12:30"
+                                        ></i>
+                                    </td>
+                                    <td>
+                                        <span class="price">1066.19 грн</span>
                             <span class="btn btn-primary">
                                 <i class="fa fa-shopping-basket"></i> Купить
                             </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>9<i class="icon-probability probability-5"></i></td>
-                        <td>2 дн.<i class="icon-time"></i></td>
-                        <td>
-                            <span class="price">1066.19 грн</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        9
+                                        <i class="icon-probability probability-50"
+                                           data-toggle="tooltip"
+                                           data-placement="top"
+                                           title="Вероятность наличия: 85%"
+                                        ></i>
+                                    </td>
+                                    <td>
+                                        2 дн.
+                                        <i class="icon-time time-00-05"
+                                           data-toggle="tooltip"
+                                           data-placement="top"
+                                           title="Товар будет доступен 07.11.2016 в 12:30"
+                                        ></i>
+                                    </td>
+                                    <td>
+                                        <span class="price">1066.19 грн</span>
                             <span class="btn btn-primary">
                                 <i class="fa fa-shopping-basket"></i> Купить
                             </span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="text-center">
-                <span class="link" data-toggle="modal" data-target="#moreOffer">
-                    <span>Еще предложения</span>
-                </span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="text-center">
+                                <span class="link" data-toggle="modal" data-target="#moreOffer">
+                                    <span>Еще предложения</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>
+                                Описание <small>Моторное масло Kroon Oil 02222</small>
+                            </h2>
+                            <p>Подходит для всех видов бензиновых и дизельных двигателей (как турбированных, так и атмосферных) легковых автомобилей и фургонов.</p>
+                        </div>
+                        <div class="col-md-12">
+
+                            <div w3-include-html="views/catalog/product/product-characteristics.html"></div>
+
+                        </div>
+                        <div class="col-md-12 reviews">
+                            <h2>
+                                Отзывы покупателей <small>Моторное масло Kroon Oil 02222</small>
+                            </h2>
+                            <div w3-include-html="views/widgets/reviews.html"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade in active" id="characteristicsProduct">
+
+                    <div w3-include-html="views/catalog/product/product-characteristics.html"></div>
+
+                </div>
+                <div class="tab-pane fade in active" id="originalAnaloguesProduct">
+                    Оригинальные аналоги
+                </div>
+                <div class="tab-pane fade in active" id="aftermarketAnaloguesProduct">
+                    Неоригинальные аналоги
+                </div>
+                <div class="tab-pane fade in active" id="applicabilityProduct">
+                    Применяемость к авто
+                </div>
+                <div class="tab-pane fade in active" id="reviewsProduct">
+                    <div class="reviews">
+                        <h2 class="m_t-0">
+                            Отзывы покупателей <small>Моторное масло Kroon Oil 02222</small>
+                        </h2>
+                        <div w3-include-html="views/widgets/reviews.html"></div>
+                    </div>
+                </div>
             </div>
+
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <h2>
-                Описание <small>Моторное масло Kroon Oil 02222</small>
-            </h2>
-            <p>Подходит для всех видов бензиновых и дизельных двигателей (как турбированных, так и атмосферных) легковых автомобилей и фургонов.</p>
+
+        <div class="col-md-3 m_b-20">
+
+            <div w3-include-html="views/widgets/widget-banner-sm.html"></div>
+
+            <div w3-include-html="views/layouts/banner-social.html"></div>
+
         </div>
-        <div class="col-md-12">
-            <h2>
-                Характеристики <small>Моторное масло Kroon Oil 02222</small>
-            </h2>
-            <ul class="list-unstyled">
-                <li>
-                    Производитель: <b>Kroon Oil</b>
-                </li>
-                <li>
-                    Рейтинг бренда: <b>?</b>
-                </li>
-                <li>
-                    Вязкость: <b>10W-40</b>
-                </li>
-                <li>
-                    Класс вязкости SAE: <b>10W-40</b>
-                </li>
-                <li>
-                    Тип основы масла: <b>Полусинтетическое масло</b>
-                </li>
-                <li>
-                    Разрешение производителя: <b>MB 229.1; Renault RN0700; VW 501.01/505.00</b>
-                </li>
-                <li>
-                    Спецификации ACEA: <b>A3; B4</b>
-                </li>
-                <li>
-                    Спецификации API: <b>CF; SN</b>
-                </li>
-                <li>
-                    Спецификации OEM: <b>MB 229.1</b>
-                </li>
-                <li>
-                    Спецификация: <b>ACEA A3/B4-12; API SN/CF</b>
-                </li>
-                <li>
-                    Тип контейнера: <b>Бутылка</b>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-12 reviews">
-            <h2>
-                Отзывы покупателей <small>Моторное масло Kroon Oil 02222</small>
-            </h2>
-            <div w3-include-html="views/widgets/reviews.html"></div>
-        </div>
+
     </div>
 </div>

@@ -17,6 +17,10 @@
         margin: 0 auto 10px;
         border-radius: 3px;
       }
+
+      img {
+        width: auto;
+      }
     }
 
     .title {
@@ -54,8 +58,8 @@
 
         &:before {
           bottom: -6px;
-          left: -2px;
-          right: -2px;
+          left: -6px;
+          right: -6px;
           top: -6px;
           box-shadow: 0 2px 10px rgba($blue, 0.85);
         }

@@ -1,79 +1,40 @@
 .offers-list {
   font-size: 0;
-  text-align: center;
-  margin: 10px -4px 0;
-
-  @include respond-to('small-x-min') {
-    &.modal-list {
-      .offers-list-item {
-        width: 100%;
-        font-size: 0;
-        border-right: none;
-
-        div {
-          display: inline-block;
-          padding: 0 5px;
-          width: 25%;
-          font-size: 16px;
-        }
-      }
-    }
-  }
-
-  &-line {
-    .offers-list-item {
-      width: 100%;
-      font-size: 0;
-      border-right: none;
-
-      div {
-        display: inline-block;
-        padding: 0 5px;
-        width: 20%;
-        font-size: 14px;
-
-        &:first-child,
-        &:last-child {
-          width: 30%;
-        }
-      }
-    }
-  }
+  padding: 0 5px;
 
   &-item {
-    display: inline-block;
-    width: 50%;
-    margin-bottom: 10px;
-    padding: 0 4px;
-    border-right: 1px solid $gray;
-    font-size: 13px;
-    text-align: left;
+    border-bottom: 1px solid $border-gray;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
 
-    &:last-child {
-      border-right: none;
+    .item-in {
+      display: inline-block;
+      width: 33.33333%;
+      padding: 0 4px;
+      font-size: 13px;
     }
 
-    div {
-      margin-bottom: 5px;
+    &:last-child {
+      border-bottom: none;
     }
 
     .price {
-      display: block;
-      padding: 2px 5px;
-      background-color: #ffe0a0;
-      border-radius: 2px;
-      font-size: 15px;
-      color: #000;
-      font-weight: 600;
+      width: 100%;
+
+      span {
+        display: inline-block;
+        margin-bottom: 3px;
+        padding: 2px 10px;
+        background-color: #ffe0a0;
+        border-radius: 2px;
+        font-size: 16px;
+        color: #000;
+        font-weight: 600;
+      }
     }
 
-    .fa {
-      margin-right: 8px;
-    }
-
-    .btn {
-      padding-left: 0;
-      padding-right: 0;
+    span {
+      cursor: pointer;
     }
   }
 
