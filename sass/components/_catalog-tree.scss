@@ -11,11 +11,13 @@
     }
 
     span {
+      padding-left: 20px;
+
       &:before {
-        float: left;
-        margin-right: 5px;
-        line-height: 1;
         content: '\f055';
+        position: absolute;
+        top: 2px;
+        left: 0;
         @include font-awesome(16px);
       }
 
@@ -25,7 +27,7 @@
     }
 
     a {
-      padding-left: 24px;
+      padding-left: 20px;
     }
 
     ul {

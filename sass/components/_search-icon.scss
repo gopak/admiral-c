@@ -1,0 +1,23 @@
+@include respond-to('medium') {
+  .search-icon {
+    position: relative;
+    margin: 10px 0 0;
+
+    &:after {
+      content: '\f002';
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      @include font-awesome(16px);
+    }
+
+
+    .form-control {
+      padding-right: 25px;
+    }
+
+    .hint {
+      display: none;
+    }
+  }
+}
