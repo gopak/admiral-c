@@ -13,6 +13,13 @@ $sm-x-html-size:  8px !default;
 //* Small XX
 $screen-sm-xx:    320px !default;
 
+// Path
+$default-path-img:    '../images/';
+$default-path-fonts:  '../fonts/';
+//  TODO Path for vendor files:
+//  sass\vendor-files\bootstrap\_variables.scss
+//  sass\vendor-files\awesome\_variables.scss
+
 //Header
 $header-height: 43px !default;
 

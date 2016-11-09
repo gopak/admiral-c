@@ -1,10 +1,35 @@
 .product-grid {
   .item {
+    position: relative;
+    margin-bottom: 10px;
     padding: 5px 5px 10px;
     background-color: #fff;
-    border: 1px solid rgba($blue, 0.75);
     border-radius: 3px;
     transition: all 0.3s;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 3px;
+      transition: all 0.3s;
+      pointer-events: none;
+    }
+
+    &:hover {
+      z-index: 1;
+
+      &:before {
+        bottom: -6px;
+        left: -6px;
+        right: -6px;
+        top: -6px;
+        box-shadow: 0 2px 10px rgba($blue, 0.85);
+      }
+    }
 
     .photo {
       display: block;
@@ -34,34 +59,28 @@
     }
   }
 
-  &-catalog {
+  &.owl-carousel {
     .item {
-      position: relative;
-      margin-bottom: 10px;
-      border-color: transparent;
-      transition: all 0.3s;
-
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        border-radius: 3px;
-        transition: all 0.3s;
-        pointer-events: none;
-      }
+      margin-bottom: 0;
+      border: 1px solid rgba($blue, 0.75);
 
       &:hover {
-        z-index: 1;
-
         &:before {
-          bottom: -6px;
-          left: -6px;
-          right: -6px;
-          top: -6px;
-          box-shadow: 0 2px 10px rgba($blue, 0.85);
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to('medium') {
+  .product-grid {
+    .item {
+      box-shadow: 0 2px 10px rgba($blue, 0.4);
+
+      &:hover {
+        &:before {
+          display: none;
         }
       }
     }
