@@ -1,36 +1,41 @@
-<div class="panel panel-default product-filters">
+<div class="btn btn-primary btn-lg m_b-10 visible-xs-block" data-filters-btn>
+    Фильтр&nbsp;&nbsp;<i class="fa fa-filter"></i>
+</div>
+
+<div class="panel panel-default finder-filters" data-filters-container>
     <div class="panel-heading">
-        <h3 class="panel-title">Подбор по параметрам</h3>
+        <h3 class="panel-title" data-filters-head>Подбор по параметрам</h3>
     </div>
     <ul class="list-group">
         <li class="list-group-item">
-            <h4 class="title">Цена</h4>
-            <div class="product-filters-price form-inline">
-                <div class="form-group">
+            <h4 class="title" data-filters-head>Цена</h4>
+            <div class="finder-filters-in" data-filters-body>
+                <div class="finder-filters-price">
                     <input type="text" class="form-control" />
-                </div>
-                &nbsp;-&nbsp;
-                <div class="form-group">
+                    &nbsp;-&nbsp;
                     <input type="text" class="form-control" />
+                    &nbsp;&nbsp;
+                    <button type="submit" class="btn btn-primary">ОК</button>
                 </div>
-                &nbsp;&nbsp;
-                <button type="submit" class="btn btn-primary">ОК</button>
             </div>
         </li>
         <li class="list-group-item">
-            <h4 class="title">С фото</h4>
-            <ul class="product-filters-list list-unstyled">
+            <h4 class="title" data-filters-head>С фото</h4>
+            <div class="finder-filters-in" data-filters-body>
+                <ul class="finder-filters-list list-unstyled">
                 <li>
                     <a href="#">
                         <input type="checkbox" /> Фото
                     </a>
                 </li>
             </ul>
+            </div>
         </li>
         <li class="list-group-item">
-            <h4 class="title">Бренд</h4>
-            <div class="scroll-box">
-                <ul class="product-filters-list list-unstyled">
+            <h4 class="title" data-filters-head>Бренд</h4>
+            <div class="finder-filters-in" data-filters-body>
+                <div class="scroll-box">
+                <ul class="finder-filters-list list-unstyled">
                     <li>
                         <a href="#">
                             <input type="checkbox" /> Bizol Bizol Bizol Bizol Bizol Bizol Bizol Bizol
@@ -104,14 +109,95 @@
 
                 </ul>
             </div>
+            </div>
         </li>
         <li class="list-group-item">
-            <h4 class="title">
+            <h4 class="title" data-filters-head>
                 Вязкость
-                <i class="fa fa-chevron-up pull-right"></i> <!-- TODO при скрітом положении fa-chevron-down -->
             </h4>
-            <div class="scroll-box">
-                <ul class="product-filters-list list-unstyled">
+            <div class="finder-filters-in" data-filters-body>
+                <div class="scroll-box">
+                    <ul class="finder-filters-list list-unstyled">
+                        <li>
+                            <a href="#">
+                                <input type="checkbox" /> Bizol Bizol Bizol Bizol Bizol Bizol Bizol Bizol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <input type="checkbox" /> Bizol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <input type="checkbox" /> Bizol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <input type="checkbox" /> Bizol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <input type="checkbox" /> Bizol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <input type="checkbox" /> Bizol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <input type="checkbox" /> Bizol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <input type="checkbox" /> Bizol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <input type="checkbox" /> Bizol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <input type="checkbox" /> Bizol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <input type="checkbox" /> Bizol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <input type="checkbox" /> Bizol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <input type="checkbox" /> Bizol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <input type="checkbox" /> Bizol
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <h4 class="title" data-filters-head>Объём</h4>
+            <div class="finder-filters-in" data-filters-body>
+                <div class="scroll-box">
+                <ul class="finder-filters-list list-unstyled">
                     <li>
                         <a href="#">
                             <input type="checkbox" /> Bizol Bizol Bizol Bizol Bizol Bizol Bizol Bizol
@@ -185,89 +271,13 @@
 
                 </ul>
             </div>
-        </li>
-        <li class="list-group-item">
-            <h4 class="title">Объём</h4>
-            <div class="scroll-box">
-                <ul class="product-filters-list list-unstyled">
-                    <li>
-                        <a href="#">
-                            <input type="checkbox" /> Bizol Bizol Bizol Bizol Bizol Bizol Bizol Bizol
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <input type="checkbox" /> Bizol
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <input type="checkbox" /> Bizol
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <input type="checkbox" /> Bizol
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <input type="checkbox" /> Bizol
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <input type="checkbox" /> Bizol
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <input type="checkbox" /> Bizol
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <input type="checkbox" /> Bizol
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <input type="checkbox" /> Bizol
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <input type="checkbox" /> Bizol
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <input type="checkbox" /> Bizol
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <input type="checkbox" /> Bizol
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <input type="checkbox" /> Bizol
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <input type="checkbox" /> Bizol
-                        </a>
-                    </li>
-
-                </ul>
             </div>
         </li>
         <li class="list-group-item">
-            <h4 class="title">Спецификации ACEA</h4>
-            <div class="scroll-box">
-                <ul class="product-filters-list list-unstyled">
+            <h4 class="title" data-filters-head>Спецификации ACEA</h4>
+            <div class="finder-filters-in" data-filters-body>
+                <div class="scroll-box">
+                <ul class="finder-filters-list list-unstyled">
                     <li>
                         <a href="#">
                             <input type="checkbox" /> Bizol Bizol Bizol Bizol Bizol Bizol Bizol Bizol
@@ -339,6 +349,7 @@
                         </a>
                     </li>
                 </ul>
+            </div>
             </div>
         </li>
     </ul>

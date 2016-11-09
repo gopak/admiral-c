@@ -74,6 +74,13 @@ $(document).ready(function () {
 
         $('[data-toggle="tooltip"]').tooltip();
 
+        $('body').on('click', function (e) {
+            if ($(e.target).data('toggle') !== 'popover'
+                && $(e.target).parents('.popover.in').length === 0) {
+                $('[data-toggle="popover"]').popover('hide');
+            }
+        });
+
         /**
          * Show/Hide block
          *
@@ -156,6 +163,16 @@ $(document).ready(function () {
         /*$(".scroll-box").mCustomScrollbar({
             axis:"y"
         });*/
+
+
+        $('[data-filters-head]').on('click', function() {
+            $(this).toggleClass('less');
+            $(this).parent().find('[data-filters-body]').slideToggle(300);
+        });
+
+        $('[data-filters-btn]').on('click', function() {
+            $(this).parent().find('[data-filters-container]').slideToggle(300);
+        });
        
     }, 2000);
 });

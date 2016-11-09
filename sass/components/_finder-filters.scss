@@ -1,0 +1,57 @@
+.finder-filters {
+  @include respond-to('medium') {
+    display: none;
+  }
+
+  .title {
+    position: relative;
+    margin: 0;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:after {
+      content: '\f077';
+      position: absolute;
+      top: 0;
+      right: 0;
+      @include font-awesome(16px);
+      color: $blue;
+      transition: all 0.3s;
+    }
+
+    &.less {
+      padding-bottom: 0;
+
+      &:after {
+        @include prefix(transform, rotate(180deg), ms webkit);
+      }
+    }
+  }
+
+  &-in {
+    padding-top: 10px;
+  }
+
+  &-list {
+    a {
+      display: block;
+      position: relative;
+      margin-bottom: 5px;
+      padding-left: 20px;
+
+      input {
+        position: absolute;
+        top: 0;
+        left:0;
+      }
+    }
+  }
+
+  &-price {
+    .form-control {
+      display: inline-block;
+      vertical-align: middle;
+      width: 70px;
+    }
+  }
+}

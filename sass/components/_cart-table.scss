@@ -1,0 +1,37 @@
+.cart-table {
+  &.table {
+    font-size: 16px;
+
+    @include respond-to('medium') {
+      font-size: 13px;
+    }
+  }
+
+  .remove {
+    opacity: 0.75;
+    font-size: 13px;
+    color: $red;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .quantity {
+    font-weight: 600;
+
+    .fa-stack {
+      font-size: 10px;
+      cursor: pointer;
+    }
+
+    &-in {
+      @include respond-to('small-x') {
+        display: block;
+        margin: 0 auto 5px;
+      }
+    }
+  }
+}
