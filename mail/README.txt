@@ -1,0 +1,1 @@
+color for link in content: #337ab7;
