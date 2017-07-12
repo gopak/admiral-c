@@ -1,14 +1,20 @@
 .catalog-grid {
   .item {
     position: relative;
-    @include flex-centre();
-    height: 200px;
+    display: table;
+    width: 100%;
+    min-height: 200px;
     margin-bottom: 10px;
     padding: 5px;
     border: 1px solid $border-gray;
     border-radius: 3px;
     text-align: center;
     transition: all 0.3s;
+
+    &-in {
+      display: table-cell;
+      vertical-align: middle;
+    }
 
     &:before {
       content: '';
@@ -57,7 +63,7 @@
 
   &-sm {
     .item {
-      height: 100px;
+      min-height: 100px;
 
       img {
         max-height: 70px;

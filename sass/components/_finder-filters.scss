@@ -8,15 +8,32 @@
     margin: 0;
     font-weight: 600;
     cursor: pointer;
+    color: $blue;
+    transition: all 0.3s;
 
     &:after {
       content: '\f077';
       position: absolute;
-      top: 0;
+      top: -5px;
       right: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 100%;
+      border: 2px solid transparent;
       @include font-awesome(16px);
       color: $blue;
+      line-height: 1;
+      text-align: center;
       transition: all 0.3s;
+    }
+    
+    &:hover {
+      color: lighten($red, 15%);
+      
+      &:after {
+        border-color: lighten($red, 15%);
+        color: lighten($red, 15%);
+      }
     }
 
     &.less {
@@ -38,6 +55,7 @@
       position: relative;
       margin-bottom: 5px;
       padding-left: 20px;
+      color: $font-color-base;
 
       input {
         position: absolute;

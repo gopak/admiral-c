@@ -17,20 +17,18 @@
       float: none;
       display: table-cell;
       vertical-align: middle;
-      width: 16.66667%;
       border-right: 1px solid #ccc;
+
+      &:hover {
+        background-color: $red;
+      }
 
       &:last-child {
         border-right: none;
       }
 
-      &.long {
-        width: 25%;
-      }
-
       a {
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding: 5px;
         color: #fff;
         transition: all 0.3s;
 
