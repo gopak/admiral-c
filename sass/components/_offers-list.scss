@@ -17,7 +17,7 @@
     .price {
       width: 100%;
 
-      span {
+      .actual {
         display: inline-block;
         margin-bottom: 3px;
         padding: 2px 10px;
@@ -26,6 +26,16 @@
         font-size: 16px;
         color: #000;
         font-weight: 600;
+        cursor: default;
+      }
+
+      .old {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 14px;
+        opacity: 0.75;
+        text-decoration: line-through;
+        cursor: default;
       }
     }
 
