@@ -1,53 +1,60 @@
 .catalog-tree {
-  li {
+  .item {
     list-style: none;
+    position: relative;
+    display: block;
+    padding: 3px 5px 3px 20px;
+    cursor: pointer;
 
-    a,
-    span {
-      position: relative;
-      display: block;
-      padding: 5px;
-      cursor: pointer;
-    }
-
-    span {
-      padding-left: 20px;
-
-      &:before {
-        content: '\f055';
-        position: absolute;
-        top: 2px;
-        left: 0;
-        @include font-awesome(16px);
-      }
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    a {
-      padding-left: 20px;
-    }
-
-    ul {
-        padding-left: 20px;
+    &:before {
+      content: '\f055';
+      position: absolute;
+      top: 4px;
+      left: 0;
+      @include font-awesome(16px);
+      line-height: 1;
+      color: $blue;
     }
 
     &.active {
-      > span {
-        cursor: default;
+      &:before {
+        content: '\f056';
+        color: lighten($font-color-base, 40%);
+      }
+    }
 
-        &:hover {
-          text-decoration: none;
-        }
+    &-stage-1 {
+      margin-left: 25px;
 
-        &:before {
-          content: '\f056';
-        }
+      &.item-link {
+        margin-left: 50px;
+      }
+    }
+
+    &-stage-2 {
+      margin-left: 50px;
+
+      &.item-link {
+        margin-left: 75px;
+      }
+    }
+
+    &-stage-3 {
+      margin-left: 75px;
+
+      &.item-link {
+        margin-left: 100px;
+      }
+    }
+
+    &-link {
+      padding-left: 15px;
+
+      &:before {
+        content: '.';
+        top: -8px;
+        font-size: 26px;
       }
     }
   }
 }
-
-

@@ -1,0 +1,38 @@
+.catalog-search {
+  &.active {
+    .input-group {
+      width: 260px;
+
+      &-addon {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-left: 0;
+      }
+
+      .form-control {
+        padding-right: 10px;
+        padding-left: 10px;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+
+  .input-group {
+    width: 35px;
+    transition: width 0.3s;
+
+    &-addon {
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
+      border-left: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .form-control {
+      padding-right: 0;
+      padding-left: 0;
+      border: none;
+      transition: none;
+    }
+  }
+}
