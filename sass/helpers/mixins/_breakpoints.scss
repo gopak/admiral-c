@@ -1,6 +1,7 @@
 // Responsive breakpoint manager
 $breakpoints: (
   'medium':       (max-width: $screen-md),
+  'medium-min':   (min-width: $screen-md),
   'small':        (max-width: $screen-sm),
   'small-x':      (max-width: $screen-sm-x),
   'small-x-min':  (min-width: $screen-sm-x),
