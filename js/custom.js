@@ -16,6 +16,10 @@ $(document).ready(function () {
             }
         });
 
+        $("[data-chosen-select]").chosen({
+            width: "100%"
+        });
+
         $('[data-carousel-publication]').owlCarousel({
             margin: 15,
             nav: true,
