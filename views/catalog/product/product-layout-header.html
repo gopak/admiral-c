@@ -18,19 +18,18 @@
 </div>
 
 <div class="well well-sm clearfix">
-    <span class="hint hidden-xs">Сортировать по:&nbsp;</span>
-    <div class="btn-group sort-btn-groupe">
-        <span class="btn btn-default sorts-btn dropdown-toggle" data-toggle="dropdown">
-            <i class="fa fa-sort"></i>&nbsp;&nbsp;по умолчанию&nbsp;&nbsp;<span class="caret"></span>
-        </span>
-        <ul class="dropdown-menu">
-            <li><a href="#">Артикул</a></li>
-            <li><a href="#">Бренд</a></li>
-            <li><a href="#">Наличие</a></li>
-            <li><a href="#">Срок поставки</a></li>
-            <li><a href="#">Цена</a></li>
-            <li><a href="#">Рейтинг бренда 1</a></li>
-        </ul>
+    <div class="pull-left">
+        <span class="hint hidden-xs">Сортировать по:&nbsp;</span>
+        <div class="sort">
+            <div class="input-group input-group-right">
+                <select class="form-control" data-chosen-select>
+                    <option value="1" selected="selected">Популярность</option>
+                    <option value="2">Дата</option>
+                    <option value="3">Выставленная оценка</option>
+                </select>
+                <span class="input-group-addon"><i class="fa fa-sort-amount-desc"></i></span> <!-- TODO сориторовка возрастание убывание смена класса fa-flip-vertical -->
+            </div>
+        </div>
     </div>
     <div class="pull-right">
         <div class="btn-group">

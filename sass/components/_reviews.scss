@@ -58,26 +58,6 @@
   .date {
     text-align: right;
   }
-
-  .sort {
-    &-in {
-      display: inline-block;
-      vertical-align: middle;
-      width: 180px;
-
-      @include respond-to('medium') {
-        width: 140px;
-      }
-    }
-
-    .fa {
-      cursor: pointer;
-      
-      &:hover {
-        color: $blue;
-      }
-    }
-  }
 }
 
 @include respond-to('medium') {
@@ -87,9 +67,7 @@
     }
 
     .sort {
-      &-in {
-        width: 140px;
-      }
+      width: 155px;
     }
   }
 }
