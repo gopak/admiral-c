@@ -1,0 +1,6 @@
+@include respond-to('medium') {
+  .container {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}

@@ -1,0 +1,13 @@
+.sort {
+  display: inline-block;
+  vertical-align: middle;
+  width: 180px;
+
+  .fa {
+    cursor: pointer;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
