@@ -1,0 +1,14 @@
+.busy {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: fixed;
+    z-index: 1010;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('#{$default-path-img}/busy.gif') no-repeat 50% 50% rgba(255, 255, 255, 0.95);
+  }
+}
