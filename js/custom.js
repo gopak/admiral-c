@@ -177,6 +177,13 @@ $(document).ready(function () {
         $('[data-filters-btn]').on('click', function() {
             $(this).parent().find('[data-filters-container]').slideToggle(300);
         });
+
+        $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            $('ul.dropdown-menu [data-toggle=dropdown]').parent().removeClass('open');
+            $(this).parent().addClass('open');
+        });
        
     }, 2000);
 });
