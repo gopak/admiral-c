@@ -5,6 +5,10 @@
   .social-item {
     display: inline-block;
     vertical-align: middle;
-    margin: 0 2px;
+    margin: 0 4px;
+
+    &-google {
+      height: 20px;
+    }
   }
 }
